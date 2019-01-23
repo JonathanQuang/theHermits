@@ -1,9 +1,8 @@
 package edu.gatech.oad.antlab.person;
-
 /**
  *  A simple class for person 2
  *  returns their name and a
- *  modified string 
+ *  modified string
  *
  * @author Bob
  * @version 1.1
@@ -30,15 +29,20 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+    String jumbleStr = "";
+    while(input.length() != 0) {
+        int randomInt = (int)(Math.random() * input.length());
+        jumbleStr += (char) input.charAt(randomInt);
+        input = input.substring(0, randomInt) + input.substring(randomInt + 1);
+    }
+    return jumbleStr;
 	}
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
