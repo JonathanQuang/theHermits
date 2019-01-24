@@ -1,11 +1,11 @@
 package edu.gatech.oad.antlab.person;
-
 /**
  *  A simple class for person 2
  *  returns their name and a
  *  modified string
  *
- * @author Gabriel Wang
+
+ * @author Daniel Martin
  * @version 1.2
  */
 public class Person2 {
@@ -30,18 +30,13 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-        List<Character> characters = new ArrayList<Character>();
-        for(char c:input.toCharArray()){
-            characters.add(c);
-        }
-        StringBuilder output = new StringBuilder(input.length());
-        while(characters.size()!= 0){
-            int randPicker = (int)(Math.random()*characters.size());
-            output.append(characters.remove(randPicker));
-        }
-        System.out.println(output.toString());
-	    return result;
+    String jumbleStr = "";
+    while(input.length() != 0) {
+        int randomInt = (int)(Math.random() * input.length());
+        jumbleStr += (char) input.charAt(randomInt);
+        input = input.substring(0, randomInt) + input.substring(randomInt + 1);
+    }
+    return jumbleStr;
 	}
 	/**
 	 * Return a string rep of this object

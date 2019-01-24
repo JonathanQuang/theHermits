@@ -57,12 +57,12 @@ import edu.gatech.oad.antlab.pkg2.*;
           + ant22.getMessage() + ant31.getMessage();
 		  //Person1 replace P1 with your name
 		  //and gburdell1 with your gt id
-		  Person1 p1 = new Person1("Gabriel");
+		  Person1 p1 = new Person1("Gabriel Wang");
 		  toPrint += p1.toString("gwang340");
 		  //Person2 replace P2 with your name
 		  //and gburdell with your gt id
-		  Person2 p2 = new Person2("Wang");
-		  toPrint += p2.toString("gwang340-gtri");
+		  Person2 p2 = new Person2("Daniel Martin");
+		  toPrint += p2.toString("dmartin99");
 		  //Person3 replace P3 with your name
 		  //and gburdell3 with your gt id
 		  Person3 p3 = new Person3("P3");
