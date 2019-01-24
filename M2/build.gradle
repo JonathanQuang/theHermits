@@ -13,12 +13,12 @@ jar {
                'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
                "Class-Path": "lib/resources.jar")
     destinationDir = file('.')
-    archiveName = 'M1.jar'
+    archiveName = 'M2.jar'
 	}
 }
 
 clean {
-    delete 'M1.jar'
+    delete 'M2.jar'
 }
 
 javadoc {
