@@ -5,7 +5,7 @@ package edu.gatech.oad.antlab.person;
  *  reversed string 
  *  
  *  @author  Meghavarnika Budati
- *  @version 1.2
+ *  @version 1.3
  */
 public class Person3 {
    /** Holds the persons real name */  
@@ -29,7 +29,7 @@ public class Person3 {
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + calc(input);
+	  return input + calc(input);
 	}
 	
 	/**
@@ -45,8 +45,8 @@ public class Person3 {
 	  //Person 3 put your implementation here
 	  String result = "";
 
-	  for (int i = 1; i <= name.length(); i++) {
-	  	result.charAt(i) = name.charAt(size - i);
+	  for (int i = 1; i <= input.length(); i++) {
+	  	result += name.charAt(input.length() - i);
 	  }
 
 	  return result;
