@@ -20,7 +20,3 @@ jar {
 clean {
     delete 'M2.jar'
 }
-
-javadoc {
-    options.addBooleanOption('html5', true)
-}
