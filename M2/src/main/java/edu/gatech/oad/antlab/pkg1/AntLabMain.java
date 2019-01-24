@@ -48,7 +48,7 @@ import edu.gatech.oad.antlab.pkg2.*;
     /**
      * gathers a string from all the other classes and prints the message
      * out to the console
-     * 
+     *
      */
     public void printOutMessage() {
 
@@ -57,8 +57,8 @@ import edu.gatech.oad.antlab.pkg2.*;
           + ant22.getMessage() + ant31.getMessage();
 		  //Person1 replace P1 with your name
 		  //and gburdell1 with your gt id
-		  Person1 p1 = new Person1("P1");
-		  toPrint += p1.toString("gburdell1");
+		  Person1 p1 = new Person1("Gabriel Wang");
+		  toPrint += p1.toString("gwang340");
 		  //Person2 replace P2 with your name
 		  //and gburdell with your gt id
 		  Person2 p2 = new Person2("Daniel Martin");
