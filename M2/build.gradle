@@ -1,0 +1,26 @@
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+dependencies {
+	compile files('lib/resources.jar')
+}
+
+jar {
+	manifest {
+  attributes(  "Implementation-Title": "Gradle",
+               "Implementation-Version": '1.0',
+               'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+               "Class-Path": "lib/resources.jar")
+    destinationDir = file('.')
+    archiveName = 'M2.jar'
+	}
+}
+
+clean {
+    delete 'M2.jar'
+}
+
+javadoc {
+    options.addBooleanOption('html5', true)
+}
