@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: Gradle
 Implementation-Version: 1.0
-Class-Path: lib/resources.jar
 Main-Class: edu.gatech.oad.antlab.pkg1.AntLabMain
+Class-Path: lib/resources.jar
 
