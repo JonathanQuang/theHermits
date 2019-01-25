@@ -18,5 +18,5 @@ jar {
 }
 
 clean {
-    delete 'M2.jar','.gradle'
+    delete 'M2.jar'
 }
