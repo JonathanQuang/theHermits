@@ -1,8 +1,0 @@
-#Thu Jan 24 18:51:03 EST 2019
-connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(C\:\\ProgramData\\chocolatey\\lib\\gradle\\tools\\gradle-5.1.1))
-override.workspace.settings=true
-auto.sync=false
-gradle.user.home=
-connection.project.dir=
-offline.mode=false
-build.scans.enabled=false
